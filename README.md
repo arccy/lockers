@@ -9,4 +9,5 @@ It is available at the [project page](https://arccy.github.io/lockers)
 
 ## License
 ![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)
+
 All images here are released under the **Creative Commons Zero (CC0)** [License](https://creativecommons.org/publicdomain/zero/1.0/)
