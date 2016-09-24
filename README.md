@@ -1,4 +1,4 @@
-# Title
+# NTU IM Lockers
 This is a single page site used to list the available lockers at NTU IM
 It is available at the [project page](https://arccy.github.io/lockers)
 
