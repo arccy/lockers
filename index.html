@@ -8,10 +8,6 @@
         <!-- <link rel="icon" href="/static/favicon.png" /> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="green">
-        <meta name="keywords" content="ntu im, lockers">
 
         <meta property="og:site_name" content="NTU IM Lockers">
         <meta property="og:title" content="NTU IM Lockers">
@@ -21,94 +17,94 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500,700" type="text/css">
         <link rel="stylesheet" href="material.min.css" />
         <script defer src="material.min.js"></script>
+        <style>
+            body {
+                font-family: Roboto, sans-serif;
+            }
+            .demo-ribbon {
+                width: 100%;
+                height: 40vh;
+                background-color: #3F51B5;
+                flex-shrink: 0;
+            }
+            .demo-main {
+                margin-top: -35vh;
+                flex-shrink: 0;
+            }
+            .demo-header .mdl-layout__header-row {
+                padding-left: 40px;
+            }
+            .demo-container {
+                max-width: 1600px;
+                width: calc(100% - 16px);
+                margin: 0 auto;
+            }
+            .demo-content {
+                border-radius: 2px;
+                padding: 80px 56px;
+                margin-bottom: 80px;
+            }
+            .demo-layout.is-small-screen .demo-content {
+                padding: 40px 28px;
+            }
+            .demo-content h3 {
+                margin-top: 48px;
+            }
+            .locker-panels {
+                font-size: 0;
+            }
+            .locker-overview {
+                display: inline-block;
+                position: relative;
+            }
+            .locker-overview.mini-locker {
+                width: calc(98% * 3/8);
+            }
+            .locker-overview.big-locker {
+                width: calc(98% / 4);
+            }
+            .locker-overview.big-big-locker {
+                width: calc(98% / 8);
+            }
+            .locker-overview.small-locker {
+                width: calc(98% / 4);
+            }
+            img {
+                width: 100%;
+            }
+            .hover-plate {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s ease;
+                color: transparent;
+                background-color: rgba(13, 71, 161, 0);
+            }
+            .hover-plate:hover {
+                color: #eee;
+                background-color: rgba(13, 71, 161, 0.7);
+            }
+            .hover-plate > p {
+                font-weight: 700;
+            }
+            .locker-con {
+                display: flex;
+                align-items: center;
+            }
+            .locker-specific {
+                width: 100%;
+            }
+            .subject {
+                font-weight: 700;
+            }
+        </style>
     </head>
-    <style>
-        body {
-            font-family: Roboto, sans-serif;
-        }
-        .demo-ribbon {
-            width: 100%;
-            height: 40vh;
-            background-color: #3F51B5;
-            flex-shrink: 0;
-        }
-        .demo-main {
-            margin-top: -35vh;
-            flex-shrink: 0;
-        }
-        .demo-header .mdl-layout__header-row {
-            padding-left: 40px;
-        }
-        .demo-container {
-            max-width: 1600px;
-            width: calc(100% - 16px);
-            margin: 0 auto;
-        }
-        .demo-content {
-            border-radius: 2px;
-            padding: 80px 56px;
-            margin-bottom: 80px;
-        }
-        .demo-layout.is-small-screen .demo-content {
-            padding: 40px 28px;
-        }
-        .demo-content h3 {
-            margin-top: 48px;
-        }
-        .locker-panels {
-            font-size: 0;
-        }
-        .locker-overview {
-            display: inline-block;
-            position: relative;
-        }
-        .locker-overview.mini-locker {
-            width: calc(98% * 3/8);
-        }
-        .locker-overview.big-locker {
-            width: calc(98% / 4);
-        }
-        .locker-overview.big-big-locker {
-            width: calc(98% / 8);
-        }
-        .locker-overview.small-locker {
-            width: calc(98% / 4);
-        }
-        img {
-            width: 100%;
-        }
-        .hover-plate {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s ease;
-            color: transparent;
-            background-color: rgba(13, 71, 161, 0);
-        }
-        .hover-plate:hover {
-            color: #eee;
-            background-color: rgba(13, 71, 161, 0.7);
-        }
-        .hover-plate > p {
-            font-weight: 700;
-        }
-        .locker-con {
-            display: flex;
-            align-items: center;
-        }
-        .locker-specific {
-            width: 100%;
-        }
-        .subject {
-            font-weight: 700;
-        }
-    </style>
     <body>
         <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
             <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
